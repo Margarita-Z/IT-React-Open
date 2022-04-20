@@ -1,0 +1,121 @@
+.features-split {
+	background-image: linear-gradient(to bottom left, rgba(225, 225, 225, 0.03) 0%, rgba(225, 225, 225, 0.03) 49.9%, rgba(225, 225, 225, 0) 50%, rgba(225, 225, 225, 0) 100%),linear-gradient(to top left, rgba(225, 225, 225, 0.03) 0%, rgba(225, 225, 225, 0.03) 49.9%, rgba(225, 225, 225, 0) 50%, rgba(225, 225, 225, 0) 100%),linear-gradient(to bottom right, rgba(225, 225, 225, 0.03) 0%, rgba(225, 225, 225, 0.03) 49.9%, rgba(225, 225, 225, 0) 50%, rgba(225, 225, 225, 0) 100%),linear-gradient(135deg, #8b3236 -20%, #5e2750 25%, #2c001e 50%);
+    background-position: top right,bottom right,top right,100%;
+    background-repeat: no-repeat;
+    background-size: 70% 65%,40% 85%,100% 30%,100%;
+	clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% calc(0% + 4rem));
+    margin-top: -4rem;
+    padding-top: 8rem;
+
+	.section-inner {
+		padding-top: $features-split--padding-t__mobile;
+		padding-bottom: $features-split--padding-b__mobile;
+	}
+
+	.section-header {
+		padding-bottom: $features-split-header--padding__mobile;
+	}
+}
+
+@include media( '>medium' ) {
+
+	.features-split {
+
+		.section-inner {
+			padding-top: $features-split--padding-t__desktop;
+			padding-bottom: $features-split--padding-b__desktop;
+		}
+
+		.section-header {
+			padding-bottom: $features-split-header--padding__desktop;
+		}
+	}
+}
+// my css
+.sw {
+    max-width: 100%;
+}
+
+.se {
+    height: auto;
+}
+.nd {
+    margin-left: auto;
+    margin-right: auto;
+}
+.tz {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.tj {
+    position: absolute;
+}
+.text-purple-600 {
+    --tw-text-opacity: 1;
+    color: rgb(93 93 255/var(--tw-text-opacity));
+}
+
+.ae {
+    fill: currentColor;
+}
+.tg {
+    transform: scale(.1);
+    opacity: 0;
+    transform-origin: center;
+  
+    animation: pulseLoop 8s linear infinite;
+}
+.ty {
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+}
+.tb {
+    -webkit-animation-delay: -4s;
+    animation-delay: -4s;
+}
+.tw {
+    -webkit-animation-delay: -6s;
+    animation-delay: -6s;
+}
+@keyframes pulseLoop {
+0% {
+    opacity: 0;
+    transform: scale(.1) translateZ(0);
+}
+40% {
+    opacity: 1;
+}
+60% {
+    opacity: 1;
+}
+100% {
+    opacity: 0;
+    transform: scale(2) translateZ(0);
+}
+}
+
+.fg {
+    font-size: 1.25rem;
+}
+
+.fv {
+    font-family: Architects Daughter, sans-serif;
+}
+.ra {
+    margin-bottom: 0.5rem;
+}
+
+ .paragraf{
+	font-family: "Inter", sans-serif;
+    font-weight: 800;
+    clear: both;
+    color: rgba(0, 0, 0, 0.6);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+	font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -0.3px;
+	text-align: center;
+}

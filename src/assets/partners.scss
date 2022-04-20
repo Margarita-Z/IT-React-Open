@@ -1,0 +1,86 @@
+.p-strip {
+    background-color: #fff;
+}
+.is-slanted--top-right {
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% calc(0% + 4rem));
+    margin-top: -4rem;
+    padding-top: 8rem;
+}
+.u-align--center {
+    justify-content: center !important;
+    text-align: center !important;
+}
+@media (min-width: 620px){
+.p-panel__header, .u-fixed-width, .p-navigation__row, .p-stepped-list--detailed .p-stepped-list__item, .row, .p-divider {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.p-panel__header, .u-fixed-width, .p-navigation__row, .p-stepped-list--detailed .p-stepped-list__item, .row, .p-divider {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.u-fixed-width, .p-navigation__row, .p-stepped-list--detailed .p-stepped-list__item, .row, .p-divider {
+    max-width: 72rem;
+}
+.u-fixed-width, .p-navigation__row, .p-stepped-list--detailed .p-stepped-list__item, .row, .p-divider {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+}
+.u-no-max-width {
+    max-width: unset !important;
+}
+
+.p-logo-section__title {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.p-table--mobile-card td::before, .p-table--mobile-card tbody th::before, thead th, .p-muted-heading {
+    text-transform: uppercase;
+}
+.u-text--muted, .p-notification--information .p-notification__timestamp, .p-notification--negative .p-notification__timestamp, .p-notification--caution .p-notification__timestamp, .p-notification--positive .p-notification__timestamp, .p-notification .p-notification__timestamp, .p-muted-heading {
+    color: rgba(0,0,0,.6);
+}
+@media (min-width: 620px){
+.p-logo-section__items {
+    margin-left: -2rem;
+    width: calc(100% + 2rem);
+}
+}
+
+.p-logo-section__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    margin-left: -1.5rem;
+    width: calc(100% + 1.5rem);
+    
+}
+@media (min-width: 620px){
+.p-logo-section__item {
+    width: calc(16.6666666667% - 2rem);
+}
+}
+@media (min-width: 620px){
+.p-logo-section__item {
+    margin-left: 2rem;
+}
+}
+.p-logo-section__item {
+    align-items: center;
+    display: flex;
+    flex: 0 1 auto;
+    margin-left: 1.5rem;
+}
+.p-logo-section__logo {
+    height: auto;
+    width: 100%;
+}
+img {
+    border: 0;
+    border-radius: 0.125rem;
+    height: auto;
+    max-width: 100%;
+}
