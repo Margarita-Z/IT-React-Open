@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link } from 'react-scroll';
-
+import { Link as MyLink } from 'react-router-dom';
 import Logo from './partials/Logo';
 
 const propTypes = {
@@ -118,26 +118,21 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link 
+                      <a 
                       activeClass="active"
                       spy={true}
                       smooth={true}
                       offset={0}
                       duration={5000}
-                      to="about" onClick={closeMenu}>About Us</Link>
+                      href="/#about" onClick={closeMenu}>About Us</a>
                     </li>
                     <li>
-                      <Link 
-                      activeClass="active"
-                      spy={true}
-                      smooth={true}
-                      offset={0}
-                      duration={5000}
-                      to="work" 
-                      onClick={closeMenu}>Work</Link>
+                      <a 
+                      href="/#work" 
+                      onClick={closeMenu}>Work</a>
                     </li>
                     <li>
-                      <Link to="/join-us" onClick={closeMenu}>Join Us</Link>
+                      <MyLink to="/join-us" onClick={closeMenu}>Join Us</MyLink>
                     </li>
                   </ul>
                   {!hideSignin &&
